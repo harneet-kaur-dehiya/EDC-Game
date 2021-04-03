@@ -25,7 +25,7 @@ def hangman():
     word = select[1]
     question = select[0]
     print(question)
-    print("Try to guess the answer in less than 10 attempts\n")
+    print("Try to guess the answer in less than 7 attempts\n")
     validLetters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTYVWXYZ1234567890.-/,|<>='
     turns = 7
     guessmade = ''
@@ -82,7 +82,7 @@ def hangman():
                 print("Last breaths counting, Take care!")
                 display(Image(filename='images6.jpg'))
             if turns == 0:
-                print("\nYou loose")
+                print("\nYou lose")
                 print("You let a kind man die")
                 display(Image(filename='images7.jpg'))
                 break
